@@ -4,6 +4,7 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Кэт энерджи</title>
+    <link rel="stylesheet" href="css/style.css">
   </head>
 
   <body class="page__body">
@@ -20,12 +21,14 @@
     </header>
     <main>
       <section class="promo">
-        <h1 class="promo__header">
-          Функциональное питание для котов
-        </h1>
-        <p class="promo__main-text">
-          Занялся собой? Займись котом!
-        </p>
+        <div class="promo__wrapper">
+          <h1 class="promo__header">
+            Функциональное питание для котов
+          </h1>
+          <p class="promo__main-text">
+            Занялся собой? Займись котом!
+          </p>
+        </div>
         <div class="promo__main-image"></div>
         <a class="promo__button button" href="form.html">
           подобрать программу
@@ -122,7 +125,9 @@
     </main>
 
     <footer class="page__footer">
-      <a class="additional-logo" href="#"></a>
+      <a class="additional-logo" href="#">
+        <span class="visually-hidden">Дополнительный логотип</span>
+      </a>
       <ul class="social-list">
         <li class="social-list__item">
           <span class="visually-hidden">VK</span>

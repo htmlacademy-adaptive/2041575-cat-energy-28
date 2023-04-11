@@ -4,6 +4,7 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Кэт энерджи</title>
+    <link rel="stylesheet" href="css/style.css">
   </head>
 
   <body class="page__body">
@@ -26,11 +27,11 @@
           <fieldset class="main-info-fieldset form__fieldset">
             <ul class="fieldset__list-items">
               <li class="fieldset__list-items__item">
-                <label class="fieldset__list-items__item__label" for="input-name">Имя:<sup>*</sup></label>
+                <label class="fieldset__list-items__item__label" for="input-name">Имя:*</label>
                 <input class="fieldset__list-items__item__input" type="text" value="Барсик" id="input-name" required>
               </li>
               <li class="fieldset__list-items__item">
-                <label class="fieldset__list-items__item__label" for="input-weight">Вес (кг):<sup>*</sup></label>
+                <label class="fieldset__list-items__item__label" for="input-weight">Вес (кг):*</label>
                 <input class="fieldset__list-items__item__input" type="number" value="7" id="input-weight" required>
               </li>
               <li class="fieldset__list-items__item">
@@ -42,7 +43,7 @@
           <fieldset class="service-fieldset form__fieldset">
             <ul class="fieldset__list-items">
               <li class="fieldset__list-items__item">
-                <input class="fieldset__list-items__item__input" type="radio" id="weight-loss-input">
+                <input class="fieldset__list-items__item__input" type="radio" id="weight-loss-input" checked>
                 <label class="fieldset__list-items__item__label" for="weight-loss-input">Похудение</label>
               </li>
               <li class="fieldset__list-items__item">
@@ -59,25 +60,25 @@
             <legend class="form__fieldset__legend">Контактные данные (владельца кота)</legend>
             <ul class="fieldset__list-items">
               <li class="fieldset__list-items__item">
-                <label class="fieldset__list-items__item__label" for="your-email">e-mail:<sup>*</sup></label>
-                <input class="fieldset__list-items__item__input" type="email" id="your-email">
+                <label class="fieldset__list-items__item__label" for="your-email">e-mail:*</label>
+                <input class="fieldset__list-items__item__input" type="email" id="your-email" placeholder="kuklachev@gmail.com">
               </li>
               <li class="fieldset__list-items__item">
-                <label class="fieldset__list-items__item__label" for="phone">Телефон:<sup>*</sup></label>
-                <input class="fieldset__list-items__item__input" type="tel" id="phone">
+                <label class="fieldset__list-items__item__label" for="phone">Телефон:*</label>
+                <input class="fieldset__list-items__item__input" type="tel" id="phone" placeholder="8 (960) 900-60-90">
               </li>
             </ul>
           </fieldset>
-          <div>
-            <p class="form__fieldset__legend">Комментарий</p>
-            <label class="visually-hidden" for="comment">Комментарий</label>
-            <input class="fieldset__list-items__item__input" type="text" id="comment" placeholder="Расскажите обо всех повадках кота">
+          <div class="form__comment-section">
+            <p class="form__comment-section__header form__fieldset__legend">Комментарий</p>
+            <label class="visually-hidden" for="comment"></label>
+            <textarea class="form__comment-section__textarea" type="text" id="comment" placeholder="Расскажите обо всех повадках кота"></textarea>
           </div>
           <fieldset class="extra-fieldset form__fieldset">
             <legend class="form__fieldset__legend">Дополнительно</legend>
             <ul class="fieldset__list-items">
               <li class="fieldset__list-items__item">
-                <input class="fieldset__list-items__item__input" type="checkbox" id="sweetener">
+                <input class="fieldset__list-items__item__input" type="checkbox" id="sweetener" checked>
                 <label class="fieldset__list-items__item__label" for="sweetener">Сахарозаменитель</label>
               </li>
               <li class="fieldset__list-items__item">
@@ -95,7 +96,7 @@
             </ul>
           </fieldset>
           <button class="form__button button"  type="submit">Отправить заявку</button>
-          <p class="form__text-below"><sup>*</sup> - обязательные поля</p>
+          <p class="form__text-below">* - обязательные поля</p>
         </form>
       </section>
       <div class="contacts contacts--secondary">
@@ -110,7 +111,9 @@
     </main>
 
     <footer class="page__footer">
-      <a class="additional-logo" href="#"></a>
+      <a class="additional-logo" href="#">
+        <span class="visually-hidden">Дополнительный логотип</span>
+      </a>
       <ul class="social-list">
         <li class="social-list__item">
           <span class="visually-hidden">VK</span>
