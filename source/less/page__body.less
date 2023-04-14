@@ -1,8 +1,39 @@
 .page__body {
   font-size: 14px;
   line-height: 18px;
-  font-family: 'Lato', sans-serif;
+  font-family: "Lato", sans-serif;
   width: 320px;
   margin: 0 auto;
-  background-color: #FFFFFF;
+  background-color: #ffffff;
+
+  display: flex;
+  flex-direction: column;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  overflow: hidden;
+  border: 0;
+  clip: rect(0 0 0 0);
+}
+
+img {
+  display: block;
+}
+
+.button {
+  font-family: "Oswald", sans-serif;
+  text-transform: uppercase;
+
+  box-sizing: border-box;
+  border: none;
+}
+
+.button--primary {
+  background-color: #68b738;
+  color: #ffffff;
 }

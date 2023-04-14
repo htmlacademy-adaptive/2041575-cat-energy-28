@@ -1,5 +1,77 @@
 .example {
   padding: 25px 20px 40px 20px;
-  background-color: #EAEAEA;
+
+  background-color: #eaeaea;
+}
+
+.example__header {
+  font-size: 36px;
+  line-height: 40px;
+  font-family: "Oswald", sans-serif;
+  font-weight: 400;
+
+  margin-top: 0;
+  margin-bottom: 40px;
+}
+
+.example__main-text {
   color: #444444;
+  margin-bottom: 20px;
+}
+
+.example__wrapper-counters {
+  display: flex;
+  justify-content: space-between;
+}
+
+.example__counter {
+  position: relative;
+
+  border: 1px solid #cdcdcd;
+  border-radius: 3px;
+  text-align: center;
+
+  width: 124px;
+
+  padding-top: 14px;
+  padding-bottom: 18px;
+}
+
+.example__counter__main-text {
+  font-size: 24px;
+  line-height: 24px;
+  font-family: "Oswald", sans-serif;
+  text-transform: uppercase;
+  text-align: center;
+
+  margin: 0;
+}
+
+.example__counter__additional-text {
+  position: absolute;
+  left: 22px;
+  right: 15px;
+  top: 32px;
+  z-index: 1;
+
+  background-color: #eaeaea;
+
+  font-size: 12px;
+  line-height: 12px;
+
+  width: 77px;
+}
+
+.example__result-text {
+  line-height: 20px;
+  font-family: "Oswald", sans-serif;
+  text-transform: uppercase;
+
+  margin-top: 34px;
+  text-align: center;
+}
+
+.example__slider {
+  margin-top: 20px;
+  height: 256px;
 }
