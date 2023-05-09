@@ -1,6 +1,12 @@
 .program-selection {
-  padding: 25px 20px 32px;
-  border-top: 1px solid #d9d9d9;
+  @media (max-width: 768px) {
+    border-top: 1px solid #d9d9d9;
+    padding: 25px 20px 32px;
+  }
+
+  @media (min-width: 769px) {
+    padding: 0 70px 72px;
+  }
 }
 
 .program-selection__header {
@@ -10,6 +16,12 @@
   font-weight: 400;
 
   margin: 0 0 37px 0;
+
+  @media (min-width: 769px) {
+    font-size: 60px;
+    line-height: 60px;
+    margin-bottom: 54px;
+  }
 }
 
 .program-selection__text {
@@ -17,4 +29,11 @@
   text-transform: uppercase;
 
   margin-bottom: 39px;
+
+  @media (min-width: 769px) {
+    font-size: 20px;
+    line-height: 30px;
+    width: 323px;
+    margin-bottom: 66px;
+  }
 }

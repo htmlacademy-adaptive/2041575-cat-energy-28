@@ -1,6 +1,58 @@
 .form__comment-section__header {
+  position: relative;
   margin-top: 24px;
   margin-bottom: 37px;
+
+  @media (min-width: 769px) {
+    margin-top: 75px;
+    margin-bottom: 76px;
+  }
+
+  @media (min-width: 1440px) {
+    margin-top: 67px;
+  }
+
+  &::after,
+  &::before {
+    position: absolute;
+    content: "";
+    background-color: #68b738;
+    height: 2px;
+  }
+
+  &::after {
+    @media (min-width: 320px) {
+      width: 158px;
+      top: 50%;
+      right: -10%;
+    }
+
+    @media (min-width: 769px) {
+      width: 478px;
+      top: 60%;
+      right: -13%;
+    }
+
+    @media (min-width: 1440px) {
+      width: 1108px;
+      top: 55%;
+      right: -5%;
+    }
+  }
+
+  &::before {
+    @media (min-width: 769px) {
+      width: 30px;
+      top: 53%;
+      left: -12%;
+    }
+
+    @media (min-width: 1440px) {
+      width: 10%;
+      top: 55%;
+      left: -12%;
+    }
+  }
 }
 
 .form__comment-section__textarea {
@@ -13,4 +65,11 @@
   font-family: "Oswald", sans-serif;
   font-size: 16px;
   text-transform: uppercase;
+
+  @media (min-width: 769px) {
+    font-size: 20px;
+    line-height: 30px;
+    min-height: 174px;
+    margin-bottom: 65px;
+  }
 }

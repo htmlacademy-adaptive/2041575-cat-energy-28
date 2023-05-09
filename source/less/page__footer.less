@@ -1,15 +1,26 @@
 .page__footer {
   background-color: #f2f2f2;
-  padding: 40px 20px;
+  padding: 0 20px;
+
+  @media (min-width: 769px) {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: nowrap;
+    padding: 55px 30px;
+  }
+
+  @media (min-width: 1440px) {
+    padding: 66px 110px;
+  }
 }
 
-.social-list {
-  list-style-type: none;
-  padding: 0;
-  margin: 0;
+.page__footer__logo {
+  display: block;
+  margin: 40px auto 20px;
+  width: 128px;
 
-  height: 64px;
-
-  border-top: 1px solid #d9d9d9;
-  border-bottom: 1px solid #d9d9d9;
+  @media (min-width: 769px) {
+    margin: 0;
+  }
 }
