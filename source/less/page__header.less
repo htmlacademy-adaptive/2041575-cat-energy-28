@@ -1,3 +1,33 @@
 .page__header {
-  padding: 10px 20px 15px 10px;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+
+  @media (min-width: 769px) {
+    display: flex;
+  }
+
+  @media (min-width: 1440px) {
+    display: flex;
+  }
+}
+
+.page__header__logo-wrapper {
+  display: flex;
+  align-items: center;
+  padding: 10px 20px 15px;
+
+  @media (min-width: 769px) {
+    padding: 0;
+    width: 174px;
+  }
+}
+
+.page__header__additional-logo {
+  margin-left: 56.5px;
+
+  @media (min-width: 769px) {
+    display: none;
+  }
 }
