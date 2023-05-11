@@ -8,10 +8,16 @@
       content: "";
       top: -33%;
       right: 0;
-      background-image: url("../img/main-image-desktop.jpg");
+      background-image: url("../img/promo-desktop.jpg");
       width: 720px;
       height: 694px;
       z-index: 0;
+      background-color: #68b738;
+
+      @media (min-resolution: 2dppx) {
+        background-image: url("../img/promo-desktop@2x.jpg");
+        background-size: 720px auto;
+      }
     }
   }
 }
@@ -45,9 +51,14 @@
   position: relative;
 
   @media (max-width: 768px) {
-    background-image: url("../img/promo-background.jpg");
+    background-color: #68b738;
+    background-image: url("../img/promo-mobile.jpg");
     background-size: cover;
     background-repeat: no-repeat;
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/promo-mobile@2x.jpg");
+    }
   }
 
   @media (min-width: 769px) {
@@ -99,7 +110,7 @@
     height: 499px;
 
     top: 10%;
-    left: 40%;
+    left: 39%;
     z-index: 1;
   }
 }
@@ -115,13 +126,12 @@
   font-family: "Oswald", sans-serif;
   text-align: center;
 
-  background-color: #68b738;
-  color: #ffffff;
-
   line-height: 18px;
   padding: 12px 44px;
   margin: 145px 20px 0;
   min-height: 44px;
+
+  font-size: 14px;
 
   @media (min-width: 768px) {
     margin: 49px 0 526px 121px;
@@ -132,5 +142,6 @@
 
   @media (min-width: 1440px) {
     margin: 52px 0 267px 190px;
+    font-size: 20px;
   }
 }

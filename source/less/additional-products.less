@@ -155,6 +155,7 @@
 }
 
 .additional-products__list-product-button {
+  font-size: 16px;
   width: 100%;
   padding: 10px 109px;
   margin-top: 15px;
@@ -168,14 +169,19 @@
 
 .additional-products__gift {
   position: relative;
-  background-image: url("../img/gift-background.jpg");
+  background-image: url("../img/gift-mobile.jpg");
+
+  @media (min-resolution: 2dppx) {
+    background-image: url("../img/gift-molbile@2x.jpg");
+    background-size: 280px auto;
+  }
 
   width: 280px;
   height: 290px;
   margin-top: 35px;
 
   @media (min-width: 769px) {
-    background-image: url("../img/gift-background-tablet.jpg");
+    background-image: url("../img/gift-tablet.jpg");
     width: 707px;
     height: auto;
     background-repeat: no-repeat;
@@ -183,13 +189,23 @@
     display: flex;
     justify-content: end;
     flex-wrap: nowrap;
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/gift-tablet@2x.jpg");
+      background-size: 707px auto;
+    }
   }
 
   @media (min-width: 1440px) {
-    background-image: url("../img/gift-background-desktop.jpg");
+    background-image: url("../img/gift-desktop.jpg");
     width: 245px;
     height: auto;
     background-repeat: no-repeat;
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/gift-desktop@2x.jpg");
+      background-size: 245px auto;
+    }
   }
 }
 
