@@ -1,5 +1,13 @@
 .additional-products {
   padding: 25px 20px 35px 20px;
+
+  @media (min-width: 769px) {
+    padding: 25px 20px 35px 20px;
+  }
+
+  @media (min-width: 1440px) {
+    padding: 0 110px 86px;
+  }
 }
 
 .additional-products__header {
@@ -8,7 +16,71 @@
   line-height: 24px;
   font-weight: 400;
 
+  position: relative;
   margin: 0 0 36px 0;
+
+  @media (min-width: 769px) {
+    font-size: 36px;
+    line-height: 36px;
+
+    margin: 0 0 80px 37px;
+  }
+
+  @media (min-width: 1440px) {
+    margin: 0 0 81px;
+  }
+}
+
+.additional-products__header::after {
+  position: absolute;
+  content: "";
+  background-color: #68b738;
+  height: 2px;
+
+  @media (min-width: 320px) {
+    width: 53px;
+    top: 55%;
+    right: -10%;
+  }
+
+  @media (min-width: 769px) {
+    width: 328px;
+    top: 60%;
+    right: -5%;
+  }
+
+  @media (min-width: 1440px) {
+    width: 80%;
+    top: 55%;
+    right: -10%;
+  }
+}
+
+.additional-products__header::before {
+  position: absolute;
+  content: "";
+  background-color: #68b738;
+  height: 2px;
+
+  @media (min-width: 769px) {
+    width: 30px;
+    top: 60%;
+    left: -9%;
+  }
+
+  @media (min-width: 1440px) {
+    width: 10%;
+    top: 55%;
+    left: -12%;
+  }
+}
+
+.additional-products__main-wrapper {
+  @media (min-width: 1440px) {
+    display: flex;
+    flex-wrap: nowrap;
+    column-gap: 80px;
+  }
 }
 
 .additional-products__list {
@@ -17,10 +89,37 @@
   list-style-type: none;
 }
 
+.additional-products__list__product__wrapper {
+  display: flex;
+  flex-direction: column;
+
+  @media (min-width: 769px) {
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-items: center;
+  }
+}
+
 .additional-products__list__product {
   padding-top: 13px;
   padding-bottom: 19px;
   border-top: 1px solid #cdcdcd;
+
+  @media (min-width: 769px) {
+    padding: 27px 38px;
+    border: 1px solid #cdcdcd;
+  }
+
+  @media (min-width: 1440px) {
+    padding: 25px 0 27px;
+    border-left: 0;
+    border-right: 0;
+
+    display: flex;
+    justify-content: space-between;
+    width: 896px;
+  }
 }
 
 .additional-products__list__product:last-child {
@@ -28,23 +127,86 @@
 }
 
 .additional-products__list__product__name {
+  display: block;
   font-size: 16px;
   font-family: "Oswald", sans-serif;
   text-transform: uppercase;
+
+  @media (min-width: 769px) {
+    font-size: 20px;
+    line-height: 20px;
+  }
+
+  @media (min-width: 1440px) {
+    width: 245px;
+  }
+}
+
+.additional-products__list__product__table {
+  @media (min-width: 769px) {
+    margin: 0;
+    width: 35%;
+  }
+
+  @media (min-width: 1440px) {
+    margin: 0 auto 0 80px;
+    width: 285px;
+  }
 }
 
 .additional-products__list-product-button {
   width: 100%;
   padding: 10px 109px;
   margin-top: 15px;
+
+  @media (min-width: 1440px) {
+    margin-top: 0;
+    max-width: 244px;
+    padding: 7px 26px;
+  }
 }
 
 .additional-products__gift {
+  position: relative;
   background-image: url("../img/gift-background.jpg");
 
   width: 280px;
   height: 290px;
   margin-top: 35px;
+
+  @media (min-width: 769px) {
+    background-image: url("../img/gift-background-tablet.jpg");
+    width: 707px;
+    height: auto;
+    background-repeat: no-repeat;
+
+    display: flex;
+    justify-content: end;
+    flex-wrap: nowrap;
+  }
+
+  @media (min-width: 1440px) {
+    background-image: url("../img/gift-background-desktop.jpg");
+    width: 245px;
+    height: auto;
+    background-repeat: no-repeat;
+  }
+}
+
+.additional-products__gift-icon {
+  position: absolute;
+  top: 30%;
+  left: 35%;
+
+  @media (min-width: 769px) {
+    top: 25%;
+    left: 15%;
+  }
+
+  @media (min-width: 1440px) {
+    top: 20%;
+    left: 35%;
+  }
 }
 
 .additional-products__gift__text {
@@ -56,4 +218,18 @@
   line-height: 20px;
   color: #ffffff;
   text-align: center;
+
+  @media (min-width: 769px) {
+    margin: 71px 124px 69px 422px;
+    padding: 0;
+    width: 161px;
+    text-align: start;
+  }
+
+  @media (min-width: 1440px) {
+    margin: 185px 43px 42px 41px;
+    padding: 0;
+    width: 161px;
+    text-align: center;
+  }
 }

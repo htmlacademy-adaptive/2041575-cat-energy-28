@@ -1,5 +1,7 @@
 .html-academy {
-  margin-top: 40px;
+  @media (max-width: 768px) {
+    margin: 20px 20px 40px;
+  }
 }
 
 .html-academy__link {
@@ -7,4 +9,12 @@
   line-height: 19px;
   color: #444444;
   text-decoration: none;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  @media (min-width: 768px) {
+    column-gap: 27px;
+  }
 }

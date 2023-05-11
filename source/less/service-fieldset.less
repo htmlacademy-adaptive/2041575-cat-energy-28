@@ -1,21 +1,80 @@
 .service-fieldset {
+  box-sizing: border-box;
+  position: relative;
   padding-top: 22px;
   padding-bottom: 19px;
-  border-bottom: 1px solid #d9d9d9;
+  margin: 0;
+
+  @media (min-width: 769px) {
+    padding: 25px 0 25px 28px;
+    border: 1px solid #e7e7e7;
+  }
+
+  @media (min-width: 1440px) {
+    max-height: 200px;
+    width: 570px;
+  }
 }
 
 .service-fieldset__list-items {
   padding: 0;
   margin: 0;
   list-style-type: none;
+
+  @media (max-width: 768px) {
+    &::after,
+    &::before {
+      position: absolute;
+      content: "";
+      background-color: #d9d9d9;
+      height: 1px;
+      width: 120%;
+    }
+
+    &::after {
+      bottom: 0;
+      left: -25px;
+    }
+
+    &::before {
+      top: 0;
+      left: -25px;
+    }
+  }
 }
 
 .service-fieldset__list-items__item {
   font-size: 16px;
   font-family: "Oswald", sans-serif;
   text-transform: uppercase;
+
+  display: flex;
+  align-items: center;
+
+  @media (min-width: 769px) {
+    font-size: 20px;
+    line-height: 30px;
+  }
+
+  @media (min-width: 1440px) {
+    max-height: 40px;
+  }
 }
 
 .service-fieldset__list-items__item:not(:last-child) {
-  margin-bottom: 25px;
+  margin-bottom: 13px;
+}
+
+.service-fieldset__item__input {
+  width: 30px;
+  height: 30px;
+
+  margin-right: 15px;
+
+  @media (min-width: 769px) {
+    width: 40px;
+    height: 40px;
+
+    margin-right: 20px;
+  }
 }

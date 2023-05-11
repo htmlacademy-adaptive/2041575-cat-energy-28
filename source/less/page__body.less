@@ -10,6 +10,18 @@
   flex-direction: column;
 }
 
+@media (min-width: 769px) {
+  .page__body {
+    width: 769px;
+  }
+}
+
+@media (min-width: 1440px) {
+  .page__body {
+    width: 1440px;
+  }
+}
+
 .visually-hidden {
   position: absolute;
   width: 1px;
@@ -28,9 +40,17 @@ img {
 .button {
   font-family: "Oswald", sans-serif;
   text-transform: uppercase;
+  font-size: 16px;
+  line-height: 20px;
 
   box-sizing: border-box;
   border: none;
+
+  cursor: pointer;
+
+  @media (min-width: 769px) {
+    font-size: 20px;
+  }
 }
 
 .button--primary {
