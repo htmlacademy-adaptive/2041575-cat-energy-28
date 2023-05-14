@@ -93,7 +93,7 @@ const copy = (done) => {
 
 // Clean
 
- export const clean = () => {
+export const clean = () => {
   return del('build');
 };
 
