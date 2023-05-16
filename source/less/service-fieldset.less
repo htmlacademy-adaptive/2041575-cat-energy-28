@@ -1,12 +1,12 @@
 .service-fieldset {
   box-sizing: border-box;
   position: relative;
-  padding-top: 22px;
-  padding-bottom: 19px;
+  padding-top: 28px;
+  padding-bottom: 26px;
   margin: 0;
 
   @media (min-width: 769px) {
-    padding: 25px 0 25px 28px;
+    padding: 29px 0 28px 28px;
     border: 1px solid #e7e7e7;
   }
 
@@ -21,7 +21,7 @@
   margin: 0;
   list-style-type: none;
 
-  @media (max-width: 768px) {
+  @media (max-width: 768.5px) {
     &::after,
     &::before {
       position: absolute;
@@ -62,7 +62,11 @@
 }
 
 .service-fieldset__list-items__item:not(:last-child) {
-  margin-bottom: 13px;
+  margin-bottom: 25px;
+
+  @media (min-width: 769px) {
+    margin-bottom: 23px;
+  }
 }
 
 .service-fieldset__item__input {
@@ -76,5 +80,13 @@
     height: 40px;
 
     margin-right: 20px;
+  }
+}
+
+.service-fieldset__item__label {
+  margin-left: 45px;
+
+  @media (min-width: 769px) {
+    margin-left: 60px;
   }
 }

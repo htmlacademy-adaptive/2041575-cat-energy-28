@@ -1,16 +1,17 @@
-.explanations-list {
+.explanations-list__wrapper {
   list-style-type: none;
   color: #444444;
 
   padding: 0;
-  margin: 40px 0 49px 0;
+  margin: 40px 0 49px 2px;
 
   display: flex;
   flex-direction: column;
+  row-gap: 20px;
 
   @media (min-width: 769px) {
     padding: 0;
-    margin: 42px 0 49px 0;
+    margin: 32px 0 49px 0;
 
     display: flex;
     flex-wrap: wrap;
@@ -31,6 +32,40 @@
     column-gap: 0;
     row-gap: 0;
     margin-bottom: 205px;
+  }
+}
+
+.explanations-list-left {
+  margin: 0;
+  padding: 0;
+
+  @media (min-width: 769px) {
+    display: flex;
+    justify-content: space-between;
+    width: 615px;
+  }
+
+  @media (min-width: 1440px) {
+    display: flex;
+    justify-content: space-between;
+    width: 572px;
+  }
+}
+
+.explanations-list-right {
+  margin: 0;
+  padding: 0;
+
+  @media (min-width: 769px) {
+    display: flex;
+    justify-content: space-between;
+    width: 615px;
+  }
+
+  @media (min-width: 1440px) {
+    display: flex;
+    justify-content: space-between;
+    width: 572px;
   }
 }
 
@@ -56,17 +91,11 @@
     display: flex;
     justify-content: space-between;
     align-items: flex-start;
-    min-width: 230px;
+    min-width: 248px;
   }
 }
 
-@media (min-width: 1440px) {
-  .explanation:nth-child(3) {
-    margin: 0 78px;
-  }
-}
-
-@media (max-width: 768px) {
+@media (max-width: 768.5px) {
   .explanation:not(:first-child) {
     margin-top: 20px;
   }
@@ -113,7 +142,7 @@
 
 .explanation__text {
   position: relative;
-  margin: 0 0 0 20px;
+  margin: -2px 0 0 20px;
   color: #444444;
   z-index: 2;
 
@@ -121,6 +150,16 @@
     margin: 31px 0 57px;
     font-size: 16px;
     line-height: 24px;
+  }
+
+  @media (max-width: 1439.5px) {
+    width: 250px;
+  }
+
+  & span {
+    @media (min-width: 769px) {
+      display: block;
+    }
   }
 }
 
@@ -132,9 +171,24 @@
     font-family: "Oswald", sans-serif;
     font-size: 280px;
     position: absolute;
-    bottom: 45%;
-    right: -2%;
+    bottom: 47%;
+    right: -7%;
     color: #f2f2f2;
     z-index: 1;
+  }
+
+  @media (min-width: 1440px) {
+    bottom: 47%;
+    right: 0;
+  }
+}
+
+.explanation__number--secondary {
+  @media (min-width: 769px) {
+    right: 2%;
+  }
+
+  @media (min-width: 1440px) {
+    right: 10%;
   }
 }
