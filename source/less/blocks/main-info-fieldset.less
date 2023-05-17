@@ -2,13 +2,14 @@
   padding-bottom: 24px;
   margin: 0;
 
-  @media (min-width: 769px) {
-    padding: 0;
+  @media (min-width: 768px) {
+    padding: 0 0 72px 0;
     width: 630px;
     margin-right: 0;
   }
 
   @media (min-width: 1440px) {
+    padding: 0;
     width: 570px;
   }
 }
@@ -19,7 +20,7 @@
   padding: 0;
 }
 
-.main-info-fieldset__list-items__item {
+.main-info-fieldset__list-item {
   display: flex;
   flex-wrap: nowrap;
   align-items: center;
@@ -27,7 +28,7 @@
   &:not(:last-child) {
     margin-bottom: 13px;
 
-    @media (min-width: 769px) {
+    @media (min-width: 768px) {
       margin-bottom: 20px;
     }
   }
@@ -37,7 +38,7 @@
   }
 }
 
-.main-info-fieldset__item__label {
+.main-info-fieldset__item-label {
   font-size: 16px;
   font-family: "Oswald", sans-serif;
   text-transform: uppercase;
@@ -47,14 +48,14 @@
   width: max-content;
   max-width: 94px;
 
-  @media (min-width: 769px) {
+  @media (min-width: 768px) {
     font-size: 20px;
     line-height: 30px;
     max-width: 117px;
   }
 }
 
-.main-info-fieldset__item__input {
+.main-info-fieldset__item-input {
   max-height: 45px;
   box-sizing: border-box;
   padding: 14px 13px 13px 20px;
@@ -69,7 +70,7 @@
   text-transform: uppercase;
   color: #444444;
 
-  @media (min-width: 769px) {
+  @media (min-width: 768px) {
     max-width: 570px;
     font-size: 20px;
     line-height: 30px;

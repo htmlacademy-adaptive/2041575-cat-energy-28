@@ -8,13 +8,9 @@
 
   display: flex;
   flex-direction: column;
-
-  // min-height: 100%;
-  // display: flex;
-  // flex-direction: column;
 }
 
-@media (min-width: 769px) {
+@media (min-width: 768px) {
   .page__body {
     width: 769px;
   }
@@ -56,7 +52,8 @@ img {
   background-color: #68b738;
   color: #ffffff;
 
-  &:hover, &:focus  {
+  &:hover,
+  &:focus {
     background-color: #5eaa2f;
   }
 
@@ -67,7 +64,8 @@ img {
 }
 
 .button--secondary {
-  &:hover, &:focus  {
+  &:hover,
+  &:focus {
     background-color: #ebebeb;
   }
 
@@ -85,7 +83,8 @@ img {
     outline: 1px solid #cdcdcd;
   }
 
-  &:focus, &:active {
+  &:focus,
+  &:active {
     outline: 2px solid #444444;
   }
 
@@ -94,13 +93,14 @@ img {
   }
 }
 
+/* stylelint-disable property-no-vendor-prefix */
 input::-webkit-outer-spin-button,
 input::-webkit-inner-spin-button {
-    -webkit-appearance: none;
-    margin: 0;
+  -webkit-appearance: none;
+  margin: 0;
 }
 
-input[type='number'] {
+input[type="number"] {
   appearance: textfield;
   -moz-appearance: textfield;
 }

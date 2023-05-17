@@ -6,7 +6,7 @@
 
   background-color: #ffffff;
 
-  @media (max-width: 768.5px) {
+  @media (max-width: 767.5px) {
     position: absolute;
     z-index: 1;
     top: 80%;
@@ -16,7 +16,7 @@
     flex-wrap: wrap;
   }
 
-  @media (min-width: 769px) {
+  @media (min-width: 768px) {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -57,7 +57,7 @@
   font-size: 20px;
   line-height: 20px;
 
-  @media (min-width: 769px) {
+  @media (min-width: 768px) {
     font-size: 18px;
     line-height: 24px;
     font-weight: 400;
@@ -69,7 +69,8 @@
     line-height: 30px;
   }
 
-  &:hover, &:focus {
+  &:hover,
+  &:focus {
     opacity: 0.6;
   }
 
@@ -95,7 +96,7 @@
   position: relative;
 
   &::after {
-    @media (min-width: 769px) {
+    @media (min-width: 768px) {
       position: absolute;
       content: "";
       background-color: #68b738;

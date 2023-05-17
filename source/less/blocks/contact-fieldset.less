@@ -4,7 +4,7 @@
   padding-bottom: 35px;
   max-width: 187px;
 
-  @media (min-width: 769px) {
+  @media (min-width: 768px) {
     max-width: 520px;
     padding: 77px 0 75px 0;
     margin-left: -5px;
@@ -30,7 +30,7 @@
       right: -60%;
     }
 
-    @media (min-width: 769px) {
+    @media (min-width: 768px) {
       width: 145px;
       top: 52.5%;
       right: -36%;
@@ -44,7 +44,7 @@
   }
 
   &::before {
-    @media (min-width: 769px) {
+    @media (min-width: 768px) {
       width: 30px;
       top: 52.5%;
       left: -13%;
@@ -71,7 +71,7 @@
   }
 }
 
-.contact-fieldset__list-items__item {
+.contact-fieldset__list-item {
   position: relative;
   display: flex;
   flex-wrap: nowrap;
@@ -83,7 +83,7 @@
   }
 }
 
-.contact-fieldset__item__label {
+.contact-fieldset__item-label {
   font-size: 16px;
   font-family: "Oswald", sans-serif;
   text-transform: uppercase;
@@ -94,7 +94,7 @@
   width: max-content;
   max-width: 68px;
 
-  @media (min-width: 769px) {
+  @media (min-width: 768px) {
     max-width: 85px;
     margin-left: -3px;
     font-size: 20px;
@@ -103,7 +103,7 @@
   }
 }
 
-.contact-fieldset__item__input {
+.contact-fieldset__item-input {
   max-height: 45px;
   box-sizing: border-box;
   padding: 14px 15px 13px 14px;
@@ -118,7 +118,7 @@
   text-transform: uppercase;
   color: #444444;
 
-  @media (min-width: 769px) {
+  @media (min-width: 768px) {
     font-size: 20px;
     line-height: 30px;
     max-height: 52px;
@@ -126,10 +126,10 @@
   }
 }
 
-.contact-fieldset__list-items__item:not(:last-child) {
+.contact-fieldset__list-item:not(:last-child) {
   margin-bottom: 14px;
 
-  @media (min-width: 769px) {
+  @media (min-width: 768px) {
     margin-bottom: 20px;
   }
 
@@ -138,12 +138,12 @@
   }
 }
 
-.contact-fieldset__item__icon {
+.contact-fieldset__item-icon {
   position: absolute;
   top: 33.5%;
   right: 5%;
 
-  @media (min-width: 769px) {
+  @media (min-width: 768px) {
     top: 37.5%;
     right: 2.25%;
   }
@@ -154,14 +154,14 @@
   }
 }
 
-.contact-fieldset__item__icon__path {
+.contact-fieldset__item-icon path {
   fill: #ffffff;
 }
 
-.input:focus + .contact-fieldset__item__icon .contact-fieldset__item__icon__path {
-    stroke: #68b738;
+.input:focus + .contact-fieldset__item-icon path {
+  stroke: #68b738;
 }
 
-.input:invalid + .contact-fieldset__item__icon .contact-fieldset__item__icon__path {
+.input:invalid + .contact-fieldset__item-icon path {
   stroke: #ff8282;
 }
