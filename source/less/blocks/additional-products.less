@@ -1,0 +1,266 @@
+.additional-products {
+  padding: 50px 20px 35px 20px;
+
+  @media (min-width: 768px) {
+    padding: 0 30px 76px 30px;
+  }
+
+  @media (min-width: 1440px) {
+    padding: 0 110px 86px;
+  }
+}
+
+.additional-products__header {
+  font-family: "Oswald", sans-serif;
+  font-size: 24px;
+  line-height: 24px;
+  font-weight: 400;
+
+  position: relative;
+  margin: 0 0 36px 0;
+
+  @media (min-width: 768px) {
+    font-size: 36px;
+    line-height: 36px;
+
+    margin: 0 0 80px 37px;
+  }
+
+  @media (min-width: 1440px) {
+    margin: 0 0 81px;
+  }
+}
+
+.additional-products__header::after {
+  position: absolute;
+  content: "";
+  background-color: #68b738;
+  height: 2px;
+
+  @media (min-width: 320px) {
+    width: 53px;
+    top: 60%;
+    right: -8%;
+  }
+
+  @media (min-width: 768px) {
+    width: 328px;
+    top: 60%;
+    right: -3%;
+  }
+
+  @media (min-width: 1440px) {
+    width: 80%;
+    top: 65%;
+    right: -10.5%;
+  }
+}
+
+.additional-products__header::before {
+  position: absolute;
+  content: "";
+  background-color: #68b738;
+  height: 2px;
+
+  @media (min-width: 768px) {
+    width: 30px;
+    top: 60%;
+    left: -10%;
+  }
+
+  @media (min-width: 1440px) {
+    width: 10%;
+    top: 65%;
+    left: -13.5%;
+  }
+}
+
+.additional-products__main-wrapper {
+  @media (min-width: 1440px) {
+    display: flex;
+    flex-wrap: nowrap;
+    column-gap: 80px;
+  }
+}
+
+.additional-products__list {
+  padding: 0;
+  margin: 0;
+  list-style-type: none;
+}
+
+.additional-products__product-wrapper {
+  display: flex;
+  flex-direction: column;
+
+  @media (min-width: 768px) {
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  @media (min-width: 1440px) {
+    justify-content: space-between;
+    width: 610px;
+  }
+}
+
+.additional-products__product {
+  padding-top: 11px;
+  padding-bottom: 19px;
+  border-top: 1px solid #cdcdcd;
+
+  @media (min-width: 768px) {
+    padding: 26px 38px 29px 38px;
+    border: 1px solid #cdcdcd;
+  }
+
+  @media (min-width: 1440px) {
+    padding: 16px 0 15px;
+    border-left: 0;
+    border-right: 0;
+
+    display: flex;
+    justify-content: space-between;
+    width: 896px;
+  }
+}
+
+.additional-products__product:last-child {
+  border-bottom: 1px solid #cdcdcd;
+}
+
+.additional-products__product-name {
+  display: block;
+  font-size: 16px;
+  font-family: "Oswald", sans-serif;
+  text-transform: uppercase;
+  margin-bottom: 8px;
+
+  @media (min-width: 768px) {
+    margin-bottom: 0;
+    font-size: 20px;
+    line-height: 20px;
+  }
+
+  @media (min-width: 1440px) {
+    width: 161px;
+  }
+}
+
+.additional-products__product-table {
+  @media (min-width: 768px) {
+    margin: 0;
+    width: 35%;
+  }
+
+  @media (min-width: 1440px) {
+    margin: 0;
+  }
+}
+
+.additional-products__list-product-button {
+  font-size: 16px;
+  width: 100%;
+  padding: 10px 109px;
+  margin-top: 11px;
+
+  @media (min-width: 768px) {
+    margin-top: 23px;
+    padding: 9px 220px;
+  }
+
+  @media (min-width: 1440px) {
+    margin-top: 0;
+    max-width: 244px;
+    min-height: 40px;
+    padding: 7px 60px;
+  }
+}
+
+.additional-products__gift {
+  position: relative;
+  background-image: url("../img/gift-mobile.jpg");
+  background-repeat: no-repeat;
+  background-color: #68b738;
+
+  min-height: 290px;
+  width: 280px;
+  margin-top: 35px;
+
+  @media (min-resolution: 2dppx) {
+    background-image: url("../img/gift-molbile@2x.jpg");
+    background-size: 280px auto;
+  }
+
+  @media (min-width: 768px) {
+    min-height: 200px;
+    background-image: url("../img/gift-tablet.jpg");
+    width: 707px;
+
+    display: flex;
+    justify-content: end;
+    flex-wrap: nowrap;
+    margin-top: 70px;
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/gift-tablet@2x.jpg");
+      background-size: 707px auto;
+    }
+  }
+
+  @media (min-width: 1440px) {
+    min-height: 245px;
+    background-image: url("../img/gift-desktop.jpg");
+    width: 245px;
+    margin-top: 0;
+    margin-left: -3px;
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/gift-desktop@2x.jpg");
+      background-size: 245px auto;
+    }
+  }
+}
+
+.additional-products__gift-icon {
+  position: absolute;
+  top: 20%;
+  left: 36%;
+
+  @media (min-width: 768px) {
+    top: 29.5%;
+    left: 11.25%;
+  }
+
+  @media (min-width: 1440px) {
+    top: 58px;
+    left: 85px;
+  }
+}
+
+.additional-products__gift-text {
+  margin: 0 auto 43px auto;
+  padding-top: 186px;
+  width: 161px;
+
+  font-size: 16px;
+  line-height: 20px;
+  color: #ffffff;
+  text-align: center;
+
+  @media (min-width: 768px) {
+    margin: 71px 124px 69px 422px;
+    padding: 0;
+    width: 161px;
+    text-align: start;
+  }
+
+  @media (min-width: 1440px) {
+    margin: 185px 43px 42px 41px;
+    padding: 0;
+    width: 161px;
+    text-align: center;
+  }
+}

@@ -1,0 +1,126 @@
+.extra-fieldset__legend {
+  position: relative;
+  margin-bottom: 40px;
+
+  @media (min-width: 768px) {
+    margin-bottom: 62px;
+  }
+
+  &::after,
+  &::before {
+    position: absolute;
+    content: "";
+    background-color: #68b738;
+    height: 2px;
+  }
+
+  &::after {
+    @media (min-width: 320px) {
+      width: 136px;
+      top: 55%;
+      right: -113%;
+    }
+
+    @media (min-width: 768px) {
+      width: 446px;
+      top: 60%;
+      right: -230%;
+    }
+
+    @media (min-width: 1440px) {
+      width: 1078px;
+      top: 64%;
+      right: -529%;
+    }
+  }
+
+  &::before {
+    @media (min-width: 768px) {
+      width: 30px;
+      top: 60%;
+      left: -70px;
+    }
+
+    @media (min-width: 1440px) {
+      width: 33%;
+      top: 60%;
+      left: -52%;
+    }
+  }
+}
+
+.extra-fieldset__list-items {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+
+  @media (min-width: 768px) {
+    display: flex;
+    flex-wrap: wrap;
+    column-gap: 123px;
+    row-gap: 42px;
+    margin-bottom: 58.5px;
+  }
+
+  @media (min-width: 1440px) {
+    margin-bottom: 66px;
+    flex-wrap: nowrap;
+    column-gap: 104px;
+  }
+}
+
+.extra-fieldset__list-item {
+  margin-bottom: 24.5px;
+  display: flex;
+  align-items: center;
+
+  @media (min-width: 768px) {
+    margin-bottom: 0;
+    width: 221px;
+  }
+
+  @media (min-width: 1440px) {
+    margin-bottom: 0;
+    width: 221px;
+  }
+
+  &:hover,
+  &:focus-within {
+    opacity: 0.6;
+  }
+
+  &:disabled {
+    opacity: 0.3;
+  }
+}
+
+.extra-fieldset__list-item:last-child {
+  @media (max-width: 767.5px) {
+    margin-bottom: 39px;
+  }
+}
+
+.extra-fieldset__item-input {
+  margin: 0;
+  width: 30px;
+  height: 30px;
+
+  @media (min-width: 768px) {
+    width: 40px;
+    height: 40px;
+  }
+}
+
+.extra-fieldset__item-label {
+  font-family: "Oswald", sans-serif;
+  font-size: 16px;
+  text-transform: uppercase;
+
+  margin-left: 45px;
+
+  @media (min-width: 768px) {
+    font-size: 20px;
+    line-height: 30px;
+    margin-left: 57px;
+  }
+}
