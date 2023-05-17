@@ -1,0 +1,126 @@
+.navigation {
+  position: relative;
+
+  display: flex;
+  align-items: center;
+
+  min-height: 65px;
+
+  @media (min-width: 768px) {
+    column-gap: 96px;
+    margin: 0 30px;
+  }
+
+  @media (min-width: 1440px) {
+    column-gap: 540px;
+    margin: 47px 110px 0;
+  }
+}
+
+.navigation__toggle {
+  display: none;
+
+  @media (max-width: 767.5px) {
+    position: absolute;
+    top: 30%;
+    right: 5%;
+    z-index: 2;
+    display: block;
+    width: 37px;
+    height: 24px;
+    cursor: pointer;
+    border: none;
+
+    background-color: #ffffff;
+  }
+}
+
+.navigation--closed .navigation__toggle::before {
+  @media (max-width: 767.5px) {
+    content: "";
+    position: absolute;
+    top: 3px;
+    right: 3px;
+    width: 24px;
+    height: 2px;
+    background-color: #000000;
+    box-shadow: 0 7.5px 0 0 #000000, 0 15px 0 0 #000000;
+  }
+}
+
+.navigation--closed .navigation__toggle:active::before {
+  background-color: fade(#000000, 30%);
+  box-shadow:
+    0 8px 0 0 fade(#000000, 30%),
+    0 16px 0 0 fade(#000000, 30%);
+}
+
+.navigation--closed .site-nav__list {
+  @media (max-width: 767.5px) {
+    display: none;
+  }
+}
+
+.navigation--opened {
+  padding-bottom: 18px;
+}
+
+.navigation--opened .site-nav__list {
+  @media (max-width: 767.5px) {
+    display: flex;
+  }
+}
+
+.navigation--opened .navigation__toggle {
+  @media (max-width: 767.5px) {
+    top: 24.5%;
+    right: 4%;
+
+    &::before,
+    &::after {
+      content: "";
+      position: absolute;
+      top: 50%;
+      left: 15%;
+      width: 25px;
+      height: 2px;
+      background-color: #000000;
+    }
+  }
+
+
+  &::before {
+    transform: rotate(45deg);
+    box-shadow: none;
+  }
+
+  &::after {
+    transform: rotate(-45deg);
+  }
+
+  &:active::before,
+  &:active::after {
+    background-color: fade(#000000, 30%);
+  }
+}
+
+.navigation--nojs {
+  @media (max-width: 767.5px) {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+.navigation--nojs .navigation__toggle {
+  @media (max-width: 767.5px) {
+    display: none;
+  }
+}
+
+.navigation--nojs .site-nav__list {
+  @media (max-width: 767.5px) {
+    min-height: 0;
+    display: block;
+    position: static;
+  }
+}

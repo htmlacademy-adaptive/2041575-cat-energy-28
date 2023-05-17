@@ -1,0 +1,123 @@
+.explanation {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+@media (min-width: 768px) {
+  .explanation {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+    max-width: 230px;
+  }
+}
+
+@media (min-width: 1440px) {
+  .explanation {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    min-width: 248px;
+  }
+}
+
+@media (max-width: 767.5px) {
+  .explanation:not(:first-child) {
+    margin-top: 20px;
+  }
+}
+
+.explanation__icon {
+  min-width: 60px;
+  min-height: 60px;
+
+  background-color: #68b738;
+}
+
+@media (min-width: 768px) {
+  .explanation__icon {
+    min-width: 80px;
+    min-height: 80px;
+    margin-top: 40px;
+  }
+}
+
+.leaf {
+  background-image: url("../img/leaf-icon.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.water {
+  background-image: url("../img/water.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.fork-and-knife {
+  background-image: url("../img/fork-and-knife.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.alarm {
+  background-image: url("../img/alarm.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.explanation__text {
+  position: relative;
+  margin: -2px 0 0 20px;
+  color: #444444;
+  z-index: 2;
+
+  @media (min-width: 768px) {
+    margin: 31px 0 57px;
+    font-size: 16px;
+    line-height: 24px;
+  }
+
+  @media (max-width: 1439.5px) {
+    width: 250px;
+  }
+
+  & span {
+    @media (min-width: 768px) {
+      display: block;
+    }
+  }
+}
+
+.explanation__number {
+  display: none;
+
+  @media (min-width: 768px) {
+    display: block;
+    font-family: "Oswald", sans-serif;
+    font-size: 280px;
+    position: absolute;
+    bottom: 47%;
+    right: -7%;
+    color: #f2f2f2;
+    z-index: 1;
+  }
+
+  @media (min-width: 1440px) {
+    bottom: 47%;
+    right: 0;
+  }
+}
+
+.explanation__number--secondary {
+  @media (min-width: 768px) {
+    right: 2%;
+  }
+
+  @media (min-width: 1440px) {
+    right: 10%;
+  }
+}

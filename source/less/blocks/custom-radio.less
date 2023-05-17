@@ -1,0 +1,37 @@
+.custom-radio {
+  position: relative;
+}
+
+.custom-radio__mark {
+  position: absolute;
+  content: "";
+  top: -7px;
+  left: -45px;
+  border: 1px solid #cdcdcd;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+
+  @media (min-width: 768px) {
+    width: 40px;
+    height: 40px;
+    top: -5px;
+    left: -60px;
+  }
+}
+
+.service-fieldset__item-input[type="radio"]:checked + .custom-radio__mark::after {
+  position: absolute;
+  content: "";
+  top: 30%;
+  left: 29%;
+  width: 13px;
+  height: 13px;
+  border-radius: 50%;
+  background-color: #68b738;
+
+  @media (min-width: 768px) {
+    width: 18px;
+    height: 18px;
+  }
+}

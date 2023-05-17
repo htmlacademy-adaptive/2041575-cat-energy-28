@@ -1,0 +1,43 @@
+.social-list {
+  list-style-type: none;
+
+  margin: 0;
+  padding: 24px 3px 15px 0;
+  max-height: 48px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-top: 1px solid #d9d9d9;
+  border-bottom: 1px solid #d9d9d9;
+
+  @media (min-width: 768px) {
+    border: 0;
+    padding: 0;
+    margin-left: 44px;
+  }
+
+  @media (min-width: 1440px) {
+    margin-left: 46px;
+    margin-top: 5px;
+  }
+}
+
+.social-list__link {
+  padding: 13px;
+
+  &:hover,
+  &:focus {
+    stroke: #68b738;
+  }
+
+  &:active {
+    stroke: #68b738;
+    opacity: 0.3;
+  }
+}
+
+.telegram {
+  @media (min-width: 1440px) {
+    margin-left: 3px;
+  }
+}
