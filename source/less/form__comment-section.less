@@ -2,14 +2,17 @@
   position: relative;
   margin-top: 24px;
   margin-bottom: 37px;
+  margin-left: 1px;
 
   @media (min-width: 769px) {
-    margin-top: 75px;
+    margin-top: 66px;
     margin-bottom: 76px;
+    margin-left: -1.5px;
   }
 
   @media (min-width: 1440px) {
     margin-top: 67px;
+    margin-left: 0;
   }
 
   &::after,
@@ -23,53 +26,60 @@
   &::after {
     @media (min-width: 320px) {
       width: 158px;
-      top: 50%;
-      right: -10%;
+      top: 55.5%;
+      right: -8%;
     }
 
     @media (min-width: 769px) {
       width: 478px;
-      top: 60%;
-      right: -13%;
+      top: 60.5%;
+      right: -10.5%;
     }
 
     @media (min-width: 1440px) {
       width: 1108px;
-      top: 55%;
-      right: -5%;
+      top: 62%;
+      right: -9%;
     }
   }
 
   &::before {
     @media (min-width: 769px) {
       width: 30px;
-      top: 53%;
-      left: -12%;
+      top: 60.5%;
+      left: -11%;
     }
 
     @media (min-width: 1440px) {
-      width: 10%;
-      top: 55%;
-      left: -12%;
+      width: 5.5%;
+      top: 62%;
+      left: -9%;
     }
   }
 }
 
 .form__comment-section__textarea {
   border: 1px solid #e7e7e7;
-  padding: 9px 12px 0 15px;
+  padding: 7px 6px 0 16px;
   margin-bottom: 23px;
-  width: 100%;
-  min-height: 150px;
+  width: 92%;
+  min-height: 139px;
 
   font-family: "Oswald", sans-serif;
   font-size: 16px;
   text-transform: uppercase;
 
   @media (min-width: 769px) {
+    width: 96.5%;
     font-size: 20px;
     line-height: 30px;
-    min-height: 174px;
-    margin-bottom: 65px;
+    min-height: 163px;
+    padding: 9px 6px 0 18px;
+    margin-bottom: 62px;
+  }
+
+  @media (min-width: 1440px) {
+    width: 98%;
+    margin-bottom: 64px;
   }
 }

@@ -21,7 +21,7 @@
   font-family: "Oswald", sans-serif;
   font-weight: 400;
 
-  margin-top: 0;
+  margin-top: -2px;
   margin-bottom: 40px;
 
   @media (min-width: 769px) {
@@ -29,11 +29,11 @@
     font-size: 60px;
     line-height: 60px;
     margin: 0;
-    padding: 43px 20px 40px;
+    padding: 41px 20px 40px 30px;
   }
 
   @media (min-width: 1440px) {
-    padding-top: 0;
+    padding: 2px 0 0 0;
     border: none;
     position: absolute;
     top: -30%;
@@ -43,22 +43,27 @@
 
 .example__main-text {
   color: #444444;
-  margin-top: 0;
+  margin-top: -1px;
   margin-bottom: 20px;
   font-size: 14px;
 
   @media (min-width: 769px) {
     font-size: 16px;
     line-height: 24px;
-    width: 95%;
-    margin: 0 20px 54px;
+    width: 92%;
+    margin: 23px 20px 54px 30px;
   }
 
   @media (min-width: 1440px) {
     padding-top: 70px;
     width: 433px;
-    margin-left: 110px;
-    margin-bottom: 69px;
+    margin: 0 20px 69px 110px;
+  }
+
+  & span {
+    @media (min-width: 769px) and (max-width: 1439.5px) {
+      display: block;
+    }
   }
 }
 
@@ -92,6 +97,10 @@
   @media (min-width: 769px) {
     column-gap: 42px;
   }
+
+  @media (min-width: 769px) and (max-width: 1439.5px) {
+    margin-left: 10px;
+  }
 }
 
 .example__counter {
@@ -120,7 +129,7 @@
   text-transform: uppercase;
   text-align: center;
 
-  margin: 0;
+  margin: 2px 0 0 2px;
 
   @media (min-width: 769px) {
     font-size: 30px;
@@ -132,7 +141,7 @@
   position: absolute;
   left: 22px;
   right: 15px;
-  top: 32px;
+  top: 34px;
   z-index: 1;
 
   background-color: #eaeaea;
@@ -162,20 +171,21 @@
   font-family: "Oswald", sans-serif;
   text-transform: uppercase;
 
-  margin-top: 34px;
+  margin-top: 32px;
+  margin-left: 2px;
   text-align: center;
 
   @media (min-width: 769px) {
     font-size: 20px;
     width: 25%;
     text-align: end;
-    margin: 0;
+    margin: 0 12px 0 0;
   }
 
   @media (min-width: 1440px) {
     width: 83%;
     text-align: start;
-    margin-left: 90px;
+    margin-left: 100px;
   }
 }
 
@@ -188,7 +198,7 @@
   @media (min-width: 1440px) {
     display: inline;
     margin-top: 0;
-    margin-left: 63px;
+    margin-left: 60px;
   }
 }
 
@@ -209,20 +219,22 @@
 }
 
 .example__slider__fat-cat {
+  position: absolute;
+  left: 0;
+  top: 0;
   width: 286px;
   height: 256px;
 
   @media (min-width: 769px) {
-    position: absolute;
-    top: -40%;
-    left: 10%;
+    top: -33%;
+    left: 13.5%;
     width: 560px;
     height: 512px;
   }
 
   @media (min-width: 1440px) {
     top: -30%;
-    left: 150px;
+    left: 200px;
   }
 }
 
@@ -235,12 +247,39 @@
   @media (min-width: 769px) {
     width: 560px;
     height: 512px;
-    top: -40%;
-    left: 10%;
+    top: -33%;
+    left: 13.5%;
   }
 
   @media (min-width: 1440px) {
     top: -30%;
-    left: 150px;
+    left: 205px;
+  }
+}
+
+.example__slider__divider {
+  display: none;
+
+  @media (min-width: 769px) {
+    display: block;
+    position: absolute;
+    z-index: 2;
+    left: 365px;
+    top: -33%;
+  }
+
+  @media (min-width: 1440px) {
+    left: 465px;
+    top: -29.5%;
+  }
+}
+
+.example__slider__divider--mobile {
+  @media (max-width: 768.5px) {
+    position: absolute;
+    display: block;
+    right: 42.5%;
+    top: 0;
+    z-index: 2;
   }
 }
