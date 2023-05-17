@@ -24,9 +24,18 @@
 
 .social-list__link {
   padding: 13px;
+
+  &:hover, &:focus {
+    stroke: #68b738;
+  }
+
+  &:active {
+    stroke: #68b738;
+    opacity: 0.3;
+  }
 }
 
-.social-list__link--telegram {
+.telegram {
   @media (min-width: 1440px) {
     margin-left: 3px;
   }

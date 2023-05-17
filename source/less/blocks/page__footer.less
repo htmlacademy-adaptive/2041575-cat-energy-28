@@ -15,7 +15,7 @@
   }
 }
 
-.page__footer__logo {
+.page__footer-logo {
   display: block;
   margin: 40px auto 15px;
   width: 128px;
@@ -23,9 +23,17 @@
   @media (min-width: 769px) {
     margin: -2px 0 0 -10px;
   }
+
+  &:hover {
+    opacity: 0.6;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
 }
 
-.page__footer__logo__mobile {
+.page__footer-logo-mobile {
   margin-left: -20px;
 
   @media (min-width: 769px) {
@@ -33,7 +41,7 @@
   }
 }
 
-.page__footer__logo__tablet {
+.page__footer-logo-tablet {
   margin-top: 3px;
   margin-left: 0;
 
@@ -46,7 +54,7 @@
   }
 }
 
-.page__footer__logo__desktop {
+.page__footer-logo-desktop {
   display: none;
 
   @media (min-width: 1440px) {

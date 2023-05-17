@@ -71,6 +71,7 @@
   @media (min-width: 1440px) {
     display: flex;
     flex-direction: column;
+    max-width: 563px;
   }
 }
 
@@ -122,7 +123,7 @@
   }
 }
 
-.example__counter__main-text {
+.example__counter-main-text {
   font-size: 24px;
   line-height: 24px;
   font-family: "Oswald", sans-serif;
@@ -137,11 +138,11 @@
   }
 }
 
-.example__counter__additional-text {
+.example__counter-additional-text {
   position: absolute;
   left: 22px;
   right: 15px;
-  top: 34px;
+  bottom: -25px;
   z-index: 1;
 
   background-color: #eaeaea;
@@ -154,7 +155,7 @@
   @media (min-width: 769px) {
     background-color: #ffffff;
     width: 130px;
-    top: 47px;
+    bottom: -20px;
     left: 15px;
 
     font-size: 14px;
@@ -275,6 +276,8 @@
 }
 
 .example__slider__divider--mobile {
+  display: none;
+
   @media (max-width: 768.5px) {
     position: absolute;
     display: block;

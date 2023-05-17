@@ -3,8 +3,8 @@
   margin: 0;
 
   @media (min-width: 769px) {
+    padding: 0;
     width: 630px;
-    padding-bottom: 72px;
     margin-right: 0;
   }
 
@@ -45,10 +45,12 @@
 
   margin-right: 14px;
   width: max-content;
+  max-width: 94px;
 
   @media (min-width: 769px) {
     font-size: 20px;
     line-height: 30px;
+    max-width: 117px;
   }
 }
 
@@ -57,6 +59,7 @@
   box-sizing: border-box;
   padding: 14px 13px 13px 20px;
   width: auto;
+  max-width: 230px;
   flex-grow: 1;
 
   border: 1px solid #e7e7e7;
@@ -67,8 +70,13 @@
   color: #444444;
 
   @media (min-width: 769px) {
+    max-width: 570px;
     font-size: 20px;
     line-height: 30px;
     min-height: 52px;
+  }
+
+  @media (min-width: 1440px) {
+    max-width: 509px;
   }
 }

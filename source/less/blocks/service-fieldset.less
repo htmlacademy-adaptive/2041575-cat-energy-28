@@ -11,7 +11,7 @@
   }
 
   @media (min-width: 1440px) {
-    max-height: 200px;
+    min-height: 196px;
     width: 570px;
   }
 }
@@ -58,6 +58,14 @@
 
   @media (min-width: 1440px) {
     max-height: 40px;
+  }
+
+  &:hover, &:focus-within {
+    opacity: 0.6;
+  }
+
+  &:disabled {
+    opacity: 0.3;
   }
 }
 

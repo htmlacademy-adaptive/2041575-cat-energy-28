@@ -182,21 +182,22 @@
 .additional-products__gift {
   position: relative;
   background-image: url("../img/gift-mobile.jpg");
+  background-repeat: no-repeat;
+  background-color: #68b738;
+
+  min-height: 290px;
+  width: 280px;
+  margin-top: 35px;
 
   @media (min-resolution: 2dppx) {
     background-image: url("../img/gift-molbile@2x.jpg");
     background-size: 280px auto;
   }
 
-  width: 280px;
-  height: 290px;
-  margin-top: 35px;
-
   @media (min-width: 769px) {
+    min-height: 200px;
     background-image: url("../img/gift-tablet.jpg");
     width: 707px;
-    height: auto;
-    background-repeat: no-repeat;
 
     display: flex;
     justify-content: end;
@@ -210,10 +211,9 @@
   }
 
   @media (min-width: 1440px) {
+    min-height: 245px;
     background-image: url("../img/gift-desktop.jpg");
     width: 245px;
-    height: auto;
-    background-repeat: no-repeat;
     margin-top: 0;
     margin-left: -3px;
 
@@ -235,8 +235,8 @@
   }
 
   @media (min-width: 1440px) {
-    top: 20%;
-    left: 35%;
+    top: 58px;
+    left: 85px;
   }
 }
 
