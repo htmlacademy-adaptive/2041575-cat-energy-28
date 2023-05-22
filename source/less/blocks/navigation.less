@@ -55,17 +55,13 @@
     0 16px 0 0 fade(#000000, 30%);
 }
 
-.navigation--closed .site-nav__list {
+.navigation--closed .site-nav-list {
   @media (max-width: 767.5px) {
     display: none;
   }
 }
 
-.navigation--opened {
-  padding-bottom: 18px;
-}
-
-.navigation--opened .site-nav__list {
+.navigation--opened .site-nav-list {
   @media (max-width: 767.5px) {
     display: flex;
   }
@@ -117,7 +113,7 @@
   }
 }
 
-.navigation--nojs .site-nav__list {
+.navigation--nojs .site-nav-list {
   @media (max-width: 767.5px) {
     min-height: 0;
     display: block;
