@@ -1,9 +1,9 @@
-.contacts--secondary {
-  background-color: #f2f2f2;
-}
-
 .contacts {
   position: relative;
+}
+
+.contacts--secondary {
+  background-color: #f2f2f2;
 }
 
 .contacts__wrapper {
@@ -30,7 +30,7 @@
 .contacts__text-for-dealers {
   font-size: 16px;
   line-height: 20px;
-  font-family: "Oswald", sans-serif;
+  font-family: "Oswald", "Arial", sans-serif;
   text-transform: uppercase;
 
   margin: 0;
@@ -76,7 +76,7 @@
   }
 }
 
-.contacts__map {
+.contacts__map-js {
   width: 320px;
   height: 362px;
 
@@ -88,6 +88,27 @@
   @media (min-width: 1440px) {
     width: 1440px;
     height: 400px;
+  }
+}
+
+
+.contacts--nojs .contacts__map {
+  width: 320px;
+  height: 362px;
+  background-image: url("../../img/map-mobile.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+
+  @media (min-width: 768px) {
+    width: 768px;
+    height: 400px;
+    background-image: url("../../img/map-tablet.png");
+  }
+
+  @media (min-width: 1440px) {
+    width: 1440px;
+    height: 400px;
+    background-image: url("../../img/map-desktop.png");
   }
 }
 

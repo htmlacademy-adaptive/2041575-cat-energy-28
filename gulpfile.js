@@ -57,7 +57,7 @@ const copyImages = () => {
 
 // Wepb
 
-const createWebp = () => {
+export const createWebp = () => {
   return gulp.src(['source/img/*.{jpg,png}', '!source/img/favicons'])
     .pipe(squoosh({
       webp: {}
