@@ -3,22 +3,17 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-}
 
-@media (min-width: 768px) {
-  .explanation {
+  @media (min-width: 768px) {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     align-items: flex-start;
     max-width: 230px;
   }
-}
 
-@media (min-width: 1440px) {
-  .explanation {
-    display: flex;
-    justify-content: space-between;
+  @media (min-width: 1440px) {
+    justify-content: flex-start;
     align-items: flex-start;
     min-width: 248px;
   }
@@ -97,7 +92,7 @@
 
   @media (min-width: 768px) {
     display: block;
-    font-family: "Oswald", sans-serif;
+    font-family: "Oswald", "Arial", sans-serif;
     font-size: 280px;
     position: absolute;
     bottom: 47%;
@@ -107,7 +102,7 @@
   }
 
   @media (min-width: 1440px) {
-    bottom: 47%;
+    top: 130px;
     right: 0;
   }
 }

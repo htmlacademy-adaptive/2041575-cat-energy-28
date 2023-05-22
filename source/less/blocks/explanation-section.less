@@ -1,4 +1,4 @@
-.explanations-list__wrapper {
+.explanation-section {
   list-style-type: none;
   color: #444444;
 
@@ -26,7 +26,7 @@
     margin: 32px 0 69px 0;
 
     display: flex;
-    flex-wrap: nowrap;
+    flex-wrap: wrap;
     justify-content: space-between;
     flex-direction: row;
     column-gap: 0;
@@ -35,9 +35,10 @@
   }
 }
 
-.explanations-list-left {
+.explanation-section__left {
   margin: 0;
   padding: 0;
+  flex-wrap: wrap;
 
   @media (min-width: 768px) {
     display: flex;
@@ -52,7 +53,7 @@
   }
 }
 
-.explanations-list-right {
+.explanation-section__right {
   margin: 0;
   padding: 0;
 
@@ -66,5 +67,6 @@
     display: flex;
     justify-content: space-between;
     width: 572px;
+    flex-wrap: wrap;
   }
 }
